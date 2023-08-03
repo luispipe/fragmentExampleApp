@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/randomFragment"
+        android:name="com.example.fragmentexampleapp.RandomFragment"
+        android:label="fragment_random"
+        tools:layout="@layout/fragment_random" />
+    <fragment
+        android:id="@+id/factorialFragment"
+        android:name="com.example.fragmentexampleapp.FactorialFragment"
+        android:label="fragment_factorial"
+        tools:layout="@layout/fragment_factorial" />
+    <fragment
+        android:id="@+id/countFragment"
+        android:name="com.example.fragmentexampleapp.CountFragment"
+        android:label="fragment_count"
+        tools:layout="@layout/fragment_count" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.fragmentexampleapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_countFragment2"
+            app:destination="@id/countFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_factorialFragment"
+            app:destination="@id/factorialFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_randomFragment"
+            app:destination="@id/randomFragment" />
+    </fragment>
+</navigation>

@@ -4,64 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A3E9F2"
     tools:context=".MainActivity">
-
-    <EditText
-        android:id="@+id/editTextTextValue"
-        android:layout_width="226dp"
-        android:layout_height="359dp"
-        android:ems="10"
-        android:hint="Valor"
-        android:inputType="text"
-        android:textAlignment="center"
-        android:textColor="#010101"
-        android:textColorHint="#2196F3"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSum"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.495" />
-
-    <Button
-        android:id="@+id/buttonRandom"
-        style="@style/btn_normal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Aleatorio"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/buttonSum"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.721" />
-
-    <Button
-        android:id="@+id/buttonFactorial"
-        style="@style/btn_normal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Factorial"
-        app:cornerRadius="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSum"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.721" />
-
-    <Button
-        android:id="@+id/buttonSum"
-        style="@style/btn_normal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Suma"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonRandom"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/buttonFactorial"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.721" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
