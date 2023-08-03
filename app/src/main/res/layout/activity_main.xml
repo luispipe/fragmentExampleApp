@@ -15,6 +15,8 @@
         android:hint="Valor"
         android:inputType="text"
         android:textAlignment="center"
+        android:textColor="#010101"
+        android:textColorHint="#2196F3"
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonSum"
         app:layout_constraintEnd_toEndOf="parent"
