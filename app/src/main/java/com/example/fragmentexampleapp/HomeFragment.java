@@ -3,6 +3,7 @@ package com.example.fragmentexampleapp;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
@@ -70,21 +71,21 @@ public class HomeFragment extends Fragment {
         randomBt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavHostFragment.findNavController(HomeFragment.this).navigate(R.id.action_homeFragment_to_randomFragment);
+                Navigation.findNavController(firstFragment).navigate(R.id.action_homeFragment_to_randomFragment);
             }
         });
 
         factorial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavHostFragment.findNavController(HomeFragment.this).navigate(R.id.action_homeFragment_to_factorialFragment);
+                Navigation.findNavController(firstFragment).navigate(R.id.action_homeFragment_to_factorialFragment);
             }
         });
 
         count.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavHostFragment.findNavController(HomeFragment.this).navigate(R.id.action_homeFragment_to_countFragment2);
+                Navigation.findNavController(firstFragment).navigate(R.id.action_homeFragment_to_countFragment2);
             }
         });
         return firstFragment;
